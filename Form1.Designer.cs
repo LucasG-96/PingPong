@@ -33,15 +33,11 @@ namespace pong
             ((System.ComponentModel.ISupportInitialize)(this.paddle2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ball)).BeginInit();
             this.SuspendLayout();
-            // 
-            // timer1
-            // 
+           
             this.timer1.Enabled = true;
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.moveBall);
-            // 
-            // points1
-            // 
+            
             this.points1.AutoSize = true;
             this.points1.ForeColor = System.Drawing.Color.White;
             this.points1.Location = new System.Drawing.Point(2, 5);
@@ -49,9 +45,7 @@ namespace pong
             this.points1.Size = new System.Drawing.Size(48, 13);
             this.points1.TabIndex = 3;
             this.points1.Text = "Player: 0";
-            // 
-            // points2
-            // 
+           
             this.points2.AutoSize = true;
             this.points2.ForeColor = System.Drawing.Color.White;
             this.points2.Location = new System.Drawing.Point(2, 22);
@@ -59,9 +53,7 @@ namespace pong
             this.points2.Size = new System.Drawing.Size(41, 13);
             this.points2.TabIndex = 4;
             this.points2.Text = "CPU: 0";
-            // 
-            // pause_txt
-            // 
+           
             this.pause_txt.AutoSize = true;
             this.pause_txt.ForeColor = System.Drawing.Color.White;
             this.pause_txt.Location = new System.Drawing.Point(120, 115);
@@ -69,36 +61,28 @@ namespace pong
             this.pause_txt.Size = new System.Drawing.Size(37, 13);
             this.pause_txt.TabIndex = 5;
             this.pause_txt.Text = "Pause";
-            // 
-            // paddle
-            // 
+           
             this.paddle.Image = ((System.Drawing.Image)(resources.GetObject("paddle.Image")));
             this.paddle.Location = new System.Drawing.Point(99, 231);
             this.paddle.Name = "paddle";
             this.paddle.Size = new System.Drawing.Size(75, 23);
             this.paddle.TabIndex = 6;
             this.paddle.TabStop = false;
-            // 
-            // paddle2
-            // 
+            
             this.paddle2.Image = ((System.Drawing.Image)(resources.GetObject("paddle2.Image")));
             this.paddle2.Location = new System.Drawing.Point(91, 16);
             this.paddle2.Name = "paddle2";
             this.paddle2.Size = new System.Drawing.Size(75, 23);
             this.paddle2.TabIndex = 7;
             this.paddle2.TabStop = false;
-            // 
-            // ball
-            // 
+            
             this.ball.Image = ((System.Drawing.Image)(resources.GetObject("ball.Image")));
             this.ball.Location = new System.Drawing.Point(124, 105);
             this.ball.Name = "ball";
             this.ball.Size = new System.Drawing.Size(23, 23);
             this.ball.TabIndex = 8;
             this.ball.TabStop = false;
-            // 
-            // Form1
-            // 
+           
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
@@ -113,7 +97,6 @@ namespace pong
             this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Pong #";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResizeEnd += new System.EventHandler(this.movePaddles);
             this.Click += new System.EventHandler(this.pause);
             ((System.ComponentModel.ISupportInitialize)(this.paddle)).EndInit();
